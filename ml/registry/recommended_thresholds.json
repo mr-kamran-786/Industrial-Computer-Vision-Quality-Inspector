@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-07-30T06:20:16.961842+00:00",
+  "model": "pcb_defect_yolo_v1",
+  "split": "val",
+  "precision_floor": 0.3,
+  "thresholds": {
+    "missing_hole": 0.193,
+    "mouse_bite": 0.414,
+    "open_circuit": 0.135,
+    "short": 0.166,
+    "spur": 0.15,
+    "spurious_copper": 0.133
+  },
+  "per_class": [
+    {
+      "class": "missing_hole",
+      "severity": "critical",
+      "beta": 2.0,
+      "threshold": 0.193,
+      "precision": 0.7804,
+      "recall": 0.9697,
+      "fbeta": 0.9248
+    },
+    {
+      "class": "mouse_bite",
+      "severity": "major",
+      "beta": 1.5,
+      "threshold": 0.414,
+      "precision": 0.9266,
+      "recall": 0.6842,
+      "fbeta": 0.7441
+    },
+    {
+      "class": "open_circuit",
+      "severity": "critical",
+      "beta": 2.0,
+      "threshold": 0.135,
+      "precision": 0.5918,
+      "recall": 0.9113,
+      "fbeta": 0.8225
+    },
+    {
+      "class": "short",
+      "severity": "critical",
+      "beta": 2.0,
+      "threshold": 0.166,
+      "precision": 0.5367,
+      "recall": 0.7436,
+      "fbeta": 0.6904
+    },
+    {
+      "class": "spur",
+      "severity": "major",
+      "beta": 1.5,
+      "threshold": 0.15,
+      "precision": 0.7,
+      "recall": 0.724,
+      "fbeta": 0.7165
+    },
+    {
+      "class": "spurious_copper",
+      "severity": "major",
+      "beta": 1.5,
+      "threshold": 0.133,
+      "precision": 0.53,
+      "recall": 0.6667,
+      "fbeta": 0.6176
+    }
+  ]
+}

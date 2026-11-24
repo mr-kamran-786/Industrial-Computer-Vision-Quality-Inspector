@@ -1,0 +1,44 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+
+# --- Environment / secrets ---
+.env
+.env.local
+*.local
+
+# --- Model weights (tracked via DVC / model registry, not git) ---
+*.pt
+*.onnx
+*.engine
+ml/models/
+ml/datasets/
+
+# --- Runtime artifacts ---
+runs/
+reports/
+backend/app/storage/uploads/
+backend/app/storage/results/
+backend/app/storage/database/
+*.db
+*.sqlite3
+
+# --- Frontend ---
+frontend/.next/
+frontend/node_modules/
+frontend/out/
+
+# --- IDE / OS ---
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
